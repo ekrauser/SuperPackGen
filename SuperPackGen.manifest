@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "addin",
+  "id": "e7b5ce7d-1f4a-4c6b-9d20-123456789abc",
+  "author": "kraus",
+  "description": {
+    "": "Generate a customizable battery-cell pack."
+  },
+  "version": "1.0.0",
+  "runOnStartup": true,
+  "supportedOS": "windows|mac"
+}
