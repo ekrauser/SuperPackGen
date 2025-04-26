@@ -6,7 +6,7 @@ handlers = []
 def run(context):
     ui = adsk.core.Application.get().userInterface
     try:
-        # Locate Resources (for your SuperPackGen_16/32/64.png files)
+        # Locate Resources 
         addInPath = os.path.dirname(os.path.realpath(__file__))
         resources = os.path.join(addInPath, 'Resources', 'SuperPackGen')
 
@@ -34,8 +34,6 @@ def run(context):
             ctrl = createPanel.controls.itemById('SuperPackGen')
             ctrl.isPromoted = True
             ctrl.isPromotedByDefault = True
-
-        # **NO** cmdDef.execute() here — the dialog only appears when you click the button.
 
     except:
         ui.messageBox('Failed to start SuperPackGen:\n{}'.format(traceback.format_exc()))
